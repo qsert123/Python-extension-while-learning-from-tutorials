@@ -1,8 +1,6 @@
 # Python Tutor browser Extension
 
-[![Build Status](https://github.com/qsert123/Python-extension-while-learning-from-tutorials/actions/workflows/build.yml/badge.svg)](https://github.com/qsert123/Python-extension-while-learning-from-tutorials/actions)
-[![Version](https://img.shields.io/github/v/release/qsert123/Python-extension-while-learning-from-tutorials)](https://github.com/qsert123/Python-extension-while-learning-from-tutorials/releases)
-[![License](https://img.shields.io/github/license/qsert123/Python-extension-while-learning-from-tutorials)](https://github.com/qsert123/Python-extension-while-learning-from-tutorials/blob/main/LICENSE)
+
 
 **Write and run Python code while watching YouTube tutorials - directly in your browser!**
 
