@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Tutor</title>
+    <link rel="stylesheet" href="sidepanel.css">
+    <script src="lib/pyodide/pyodide.js"></script>
+</head>
+<body>
+    <div class="container">
+        <!-- Header with logo -->
+        <div class="header">
+            <div class="logo-container">
+                <h3>Python</h3>
+            </div>
+        </div>
+        
+        <!-- Status indicator -->
+        <div id="status" class="status loading">
+            Loading Python environment (first time takes 15-20 seconds)...
+        </div>
+        
+        <!-- Code editor with line numbers -->
+        <div class="editor-container">
+            <div class="line-numbers" id="line-numbers"></div>
+            <textarea id="code-editor" placeholder='Write your Python code here...
+Example:
+print("Hello, World!")'># Welcome to Python Tutor!
+# Try running this code:
+
+print("Hello, World!")
+
+# Try input
+name = input("What is your name? ")
+print(f"Nice to meet you, {name}!")</textarea>
+        </div>
+        
+        <!-- Run button -->
+        <button id="run-button" class="run-btn">
+            ▶ Run Code
+        </button>
+        
+        <!-- Output section -->
+        <div class="output-header">
+            <span>Output:</span>
+            <button id="clear-btn" class="clear-btn">Clear</button>
+        </div>
+        <pre id="output-console">Click Run to see your output here...</pre>
+    </div>
+    <script src="sidepanel.js"></script>
+</body>
+</html>

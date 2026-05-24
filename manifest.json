@@ -1,0 +1,40 @@
+{
+  "manifest_version": 3,
+  "name": "Learn Python While Watching Tutorials",
+  "version": "1.0",
+  "description": "Write and run Python code directly alongside your tutorials. Perfect for beginners!",
+  "permissions": ["sidePanel", "tabs", "storage"],
+  "host_permissions": [
+    "https://www.youtube.com/*",
+    "https://www.coursera.org/*",
+    "https://www.udemy.com/*"
+  ],
+  "side_panel": {
+    "default_path": "sidepanel.html"
+  },
+  "action": {
+    "default_title": "Open Python Tutor",
+    "default_icon": {
+      "16": "snake.png",
+      "32": "snake.png",
+      "48": "snake.png",
+      "128": "snake.png"
+    }
+  },
+  "icons": {
+    "16": "snake.png",
+    "32": "snake.png",
+    "48": "snake.png",
+    "128": "snake.png"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self' 'wasm-unsafe-eval'; object-src 'self';"
+  },
+  "web_accessible_resources": [{
+    "resources": ["lib/pyodide/*", "snake.png"],
+    "matches": ["<all_urls>"]
+  }]
+}
